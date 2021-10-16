@@ -58,7 +58,7 @@ function insertar() {
         {
             datatype:   'json',
             data    :   elemento,
-            url     :   'https://ge0efcf461dc328-reto1.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/costume',
+            url     :   'https://ga979746fc4e44d-databaseaction.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/costume',
             type    :   'POST',
             success      :  function(response){
                                
@@ -91,7 +91,7 @@ function borrar(idElemento) {
             datatype    : 'json',
             data        :  dataToSend,
             contentType  : 'application/json', 
-            url         :  'https://ge0efcf461dc328-reto1.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/costume',
+            url         :  'https://ga979746fc4e44d-databaseaction.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/costume',
             type        : 'DELETE',
             success      :  function(response){
                                 console.log(response);
@@ -122,7 +122,7 @@ function actualizar() {
             datatype:   'json',
             data    :   datatosend,
             contentType: 'application/json', 
-            url     : 'https://ge0efcf461dc328-reto1.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/costume',
+            url     : 'https://ga979746fc4e44d-databaseaction.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/costume',
             type    :   'PUT',
             success      :  function(response){
                                
@@ -148,7 +148,7 @@ function actualizar() {
         $.ajax (
                     {
     
-                        url          : 'https://ge0efcf461dc328-reto1.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/costume/' + codigo ,
+                        url          : 'https://ga979746fc4e44d-databaseaction.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/custome/' + codigo ,
                         type         : 'GET',
                         dataType     : 'json',
     
@@ -177,7 +177,7 @@ function obtenerItems(){
     $.ajax (
         {
             dataType     : 'json', 
-            url          : 'https://ge0efcf461dc328-reto1.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/costume',
+            url          : 'https://ga979746fc4e44d-databaseaction.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/costume',
             type         : 'GET',
             success      :  function(response){
                 $("#idDivConsulta").empty();
@@ -208,7 +208,7 @@ function obtenerItemEspecifico(idIdItem){
     $.ajax (
         {
             dataType     : 'json', 
-            url          : 'https://ge0efcf461dc328-reto1.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/costume/'+idIdItem,
+            url          : 'https://ga979746fc4e44d-databaseaction.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/costume/custome/'+idIdItem,
             type         : 'GET',
             success      :  function(response){
                 console.log(response);
